@@ -15,9 +15,8 @@ def contador():
 def core():
 
     status.value = 'Rodando...'
-    ##while True:
     janela = util.getWindowsWithTitle('cmd.exe')
-    janela2 = util.getWindowsWithTitle('prompt de comando')
+    janela2 = util.getWindowsWithTitle('prompt')
     if len(janela):
         try:
             print(janela)
@@ -37,7 +36,7 @@ def core():
     if len(janela2):
         try:
             print(janela2)
-            janela = util.getWindowsWithTitle('prompt de comando')[0]
+            janela = util.getWindowsWithTitle('prompt')[0]
             print(janela, '2')
             lugar = f'foto{num}.png'
             ##time.sleep(0.5)
