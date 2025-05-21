@@ -65,7 +65,7 @@ def corepause():
     status.value = 'Rodando...'
     status2.show()
     status2.value = 'Modo: Printar & pausar'
-    if nump == int(limit.value)-1:
+    if nump >= int(limit.value)-1:
         stopcore()
     janelacheck = util.getWindowsWithTitle('cmd.exe')
     janelacheck2 = util.getWindowsWithTitle('prompt')
