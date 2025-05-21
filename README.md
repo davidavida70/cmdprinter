@@ -6,4 +6,6 @@ O cmdprinter detecta janelas com os nomes: 'cmd' e 'prompt', podendo escolher en
 ALERTA:
 Esse programa não garante prevenção contra ataques maliciosos, ele apenas tenta parar o prompt de comando que inesperadamente pode abrir, porque tem chance de falhar no tempo em que realiza o seu script (cmd pode ser mais rápido, mais lento para mostrar o conteúdo, oculto, etc).
 
+QUALQUER JANELA COM OS NOMES 'cmd.exe' e 'prompt' SERÁ ALVO DO PROGRAMA, utilizar apenas em testes sem muita coisa aberta.
+
 Programa executável disponível na aba releases (canto direito)
