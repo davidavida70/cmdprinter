@@ -16,6 +16,7 @@ status2.hide()
 limit = Slider(d, start=5, end=50)
 nump = 0
 numkill = 0
+nump2 = 0
 
 
 def contadork():
@@ -24,9 +25,9 @@ def contadork():
     return numkill
 
 def contadorp():
-    global nump
+    global nump, nump2
     nump += 1
-    return nump
+    nump2 += 1
 
 def escolher():
     esc.show(wait=True)
@@ -61,11 +62,12 @@ def corekill():
 
 
 def corepause():
-    global limit, nump
+    global limit, nump, nump2
     status.value = 'Rodando...'
     status2.show()
     status2.value = 'Modo: Printar & pausar'
-    if nump >= int(limit.value)-1:
+    if nump2 >= int(limit.value)-1:
+        nump2 = -1
         stopcore()
     janelacheck = util.getWindowsWithTitle('cmd.exe')
     janelacheck2 = util.getWindowsWithTitle('prompt')
