@@ -1,5 +1,5 @@
 Requisito:
-- Ter python instalado
+- Ter python instalado(?)
 
 O cmdprinter detecta janelas com os nomes: 'cmd' e 'prompt', podendo escolher entre o método Printar & executar em que o programa tira uma print da tela e fecha o cmd, ou o método Printar & pausar, que em vez de fechar permanece aberto apenas pausando a execução.
 
