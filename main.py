@@ -159,6 +159,8 @@ def vaicorepause():
     d.repeat(100, corepause)
     esc.hide()
 
+def linguagem():
+    exit(0)
 
 def stopcore():
     status.value = 'Pausado...'
@@ -169,7 +171,7 @@ def stopcore():
 menus = MenuBar(d, toplevel=['Opções', 'Ajuda'],
                 options=[
                     [['Selecionar pasta', pasta], ['Selecionar delay (s)', mschoice]],
-                    [['Sobre', autor], ['Select language (em breve)', exit]]
+                    [['Sobre', autor], ['Select language (em breve)', linguagem]]
                 ])
 fill = Text(d, align='bottom')
 butao2 = PushButton(d, text='Parar', command=stopcore, align='bottom')
