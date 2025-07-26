@@ -64,7 +64,7 @@ def corekill():
         try:
             janela = util.getWindowsWithTitle('cmd.exe')[0]
             lugar = f'{path}/fotocmd{numkill}.png'
-            time.sleep(int(msbox.value))
+            time.sleep(float(msbox.value))
             screenshot = ImageGrab.grab()
             screenshot.save(lugar)
             print(lugar)
@@ -82,7 +82,7 @@ def corekill():
         try:
             janela = util.getWindowsWithTitle('prompt')[0]
             lugar = f'{path}/fotoprompt{numkill}.png'
-            time.sleep(int(msbox.value))
+            time.sleep(float(msbox.value))
             screenshot = ImageGrab.grab()
             screenshot.save(lugar)
             print(lugar)
@@ -102,7 +102,7 @@ def corepause():
     status.value = 'Rodando...'
     status2.show()
     status2.value = 'Modo: Printar & pausar'
-    if nump2 >= int(limit.value) - 1:
+    if nump2 >= float(limit.value) - 1:
         nump2 = -1
         stopcore()
     janelacheck = util.getWindowsWithTitle('cmd.exe')
@@ -116,7 +116,7 @@ def corepause():
             contadorp()
             pyautogui.press('pause')
             if len(janelacheck) == 1:
-                time.sleep(int(msboxp.value))
+                time.sleep(float(msboxp.value))
         except OSError as tip:
             print(f'Erro: {tip}')
             stopcore()
@@ -133,7 +133,7 @@ def corepause():
             contadorp()
             pyautogui.press('pause')
             if len(janelacheck2) == 1:
-                time.sleep(int(msboxp.value))
+                time.sleep(float(msboxp.value))
         except OSError as tip:
             print(f'Erro: {tip}')
             stopcore()
