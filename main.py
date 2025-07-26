@@ -41,7 +41,8 @@ def contadorp():
 def pasta():
     global path, jascolhi
     path = d.select_folder()
-    jascolhi = 1
+    if path:
+        jascolhi = 1
 
 
 def escolher():
@@ -71,7 +72,7 @@ def corekill():
             janela.close()
         except OSError as tip:
             print(f'Erro: {tip}')
-            exit(0)
+            stopcore()
         except ValueError as tip:
             print(f'Erro: {tip}')
             stopcore()
@@ -89,7 +90,7 @@ def corekill():
             janela.close()
         except OSError as tip:
             print(f'Erro: {tip}')
-            exit(0)
+            stopcore()
         except ValueError as tip:
             print(f'Erro: {tip}')
             stopcore()
@@ -118,7 +119,7 @@ def corepause():
                 time.sleep(int(msboxp.value))
         except OSError as tip:
             print(f'Erro: {tip}')
-            exit(0)
+            stopcore()
         except ValueError as tip:
             print(f'Erro: {tip}')
             stopcore()
@@ -135,7 +136,7 @@ def corepause():
                 time.sleep(int(msboxp.value))
         except OSError as tip:
             print(f'Erro: {tip}')
-            exit(0)
+            stopcore()
         except ValueError as tip:
             print(f'Erro: {tip}')
             stopcore()
